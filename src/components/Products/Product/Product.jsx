@@ -9,7 +9,7 @@ function Product({ product }) {
 
     return (
         <Card className={classes.root}>
-            <CardMedia classname={classes.media} image='' title={product.name} />
+            <CardMedia classname={classes.media} image={product.image} title={product.name} />
             <CardContent>
                 <div className={classes.cardContent}>
                     <Typography variant="h5" gutterBottom>
@@ -19,7 +19,7 @@ function Product({ product }) {
                         {product.price}
                     </Typography>
                 </div>
-                <Typography variant="h2" color="textSecondary">{product.description}</Typography>
+                <Typography variant="body2" color="textSecondary">{product.description}</Typography>
             </CardContent>
             <CardActions disableSpacing className={classes.cardActions}>
                 <IconButton aria-label="Add to Cart">
